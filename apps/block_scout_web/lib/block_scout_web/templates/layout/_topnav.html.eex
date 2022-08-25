@@ -5,6 +5,7 @@
     <%= link to: webapp_url(@conn), class: "navbar-brand", "data-test": "header_logo" do %>
       <%= if logo() do %>
         <img class="navbar-logo" id="navbar-logo" src="<%= static_path(@conn, logo()) %>" alt="<%= subnetwork_title() %>" />
+        <img class="navbar-logo" id="navbar-header-logo" src="<%= static_path(@conn, logo_header()) %>" alt="<%= subnetwork_title() %>" />
       <% end %>
       <%= if logo_text() do %>
         <span class="logo-text <%= unless logo(), do: "no-logo" %>"> <%= logo_text() %> </span>
