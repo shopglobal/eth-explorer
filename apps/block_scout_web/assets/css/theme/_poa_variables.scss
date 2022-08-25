@@ -3,6 +3,7 @@ $primary: #2e7632;
 $secondary: #87e1a9;
 $tertiary: #bf9cff;
 $additional-font: #fff;
+$labels-dark: #fff; // header nav, labels
 
 // footer
 $footer-background-color: #87e1a9;
@@ -25,7 +26,7 @@ $dashboard-banner-gradient-start: $primary; // gradient begin
 
 $dashboard-banner-gradient-end: lighten($primary, 5); // gradient end
 
-$dashboard-banner-network-plain-container-background-color: #87e1a9; // stats bg
+$dashboard-banner-network-plain-container-background-color: #2e7632; // stats bg
 
 
 // navigation
@@ -63,6 +64,10 @@ $card-tab-active: $primary;
 	}
 }
 
+.dashboard-banner-network-stats-label,
+.dashboard-banner-chart-legend .dashboard-banner-chart-legend-label {
+	color: $labels-dark;
+}
 // Badges
 $badge-neutral-color: $primary;
 $badge-neutral-background-color: rgba($primary, .1);
