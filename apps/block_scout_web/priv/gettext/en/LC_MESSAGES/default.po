@@ -1020,13 +1020,6 @@ msgid "ERC-721 "
 msgstr ""
 
 #, elixir-format
-#: lib/block_scout_web/templates/address_token/overview.html.eex:1
-#: lib/block_scout_web/templates/smart_contract/_functions.html.eex:104 lib/block_scout_web/templates/smart_contract/_functions.html.eex:104
-#: lib/block_scout_web/templates/smart_contract/_functions.html.eex:146
-msgid "KEK"
-msgstr ""
-
-#, elixir-format
 #: lib/block_scout_web/templates/api_docs/eth_rpc.html.eex:4
 msgid "KEK RPC API Documentation"
 msgstr ""
@@ -1109,6 +1102,9 @@ msgid "KEK RPC"
 msgstr ""
 
 #, elixir-format
+#: lib/block_scout_web/templates/address_token/overview.html.eex:1
+#: lib/block_scout_web/templates/smart_contract/_functions.html.eex:104 lib/block_scout_web/templates/smart_contract/_functions.html.eex:104
+#: lib/block_scout_web/templates/smart_contract/_functions.html.eex:146
 #: lib/block_scout_web/templates/address/_current_coin_balance.html.eex:11
 #: lib/block_scout_web/templates/address/index.html.eex:5 lib/block_scout_web/templates/address/overview.html.eex:179
 #: lib/block_scout_web/templates/block/overview.html.eex:215 lib/block_scout_web/templates/internal_transaction/_tile.html.eex:24
