@@ -2427,7 +2427,8 @@ defmodule Explorer.Chain do
       :eth -> 1
       :kovan -> 42
       :bsc -> 56
-      :poa -> 99
+      :poa -> 420420
+      :kek -> 420420
       nil -> nil
       _ -> :undefined
     end
