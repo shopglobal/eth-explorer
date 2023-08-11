@@ -19,25 +19,25 @@
 
     <div class="row">
       <div class="col-xs-12 col-lg-3">
-        <p class="footer-info-text"><%= gettext("KEKCHAIN. Developed for Decentralized Apps Build Ethereum dApps with minimal configuration changes No need to rewrite or reconfigure your smart contracts they'll work right away Use Ethereum-based tools you love like MetaMask, Remix, Hardhat, Waffle, and Truffle.Support for Solidity, Vyper, and anything that compiles to EVM bytecode.") %></p>
+        <p class="footer-info-text"><%= gettext("GO ELECTRONERO. Developed for Decentralized Apps Build Ethereum dApps with minimal configuration changes No need to rewrite or reconfigure your smart contracts they'll work right away Use Ethereum-based tools you love like MetaMask, Remix, Hardhat, Waffle, and Truffle.Support for Solidity, Vyper, and anything that compiles to EVM bytecode.") %></p>
         <div class="footer-social-icons">
-          <a href="https://github.com/kek-chain/" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Github") %>'>
+          <a href="https://github.com/go-electronero/" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Github") %>'>
             <div class="footer-social-icon-container fontawesome-icon github"></div>
           </a>
-          <a href="https://www.twitter.com/kekchain/" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Twitter") %>'>
+          <a href="https://www.twitter.com/_electronero" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Twitter") %>'>
             <div class="footer-social-icon-container fontawesome-icon twitter"></div>
           </a>
-          <a href="https://t.me/kekchain/" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Telegram") %>'>
+          <a href="https://t.me/etnxnews/" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Telegram") %>'>
             <div class="footer-social-icon-container fontawesome-icon telegram"></div>
           </a>
         </div>
       </div>
 
       <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
-        <h3>KEKCHAIN</h3>
+        <h3>GO ELECTRONERO</h3>
         <ul>
-          <li><a href="https://github.com/kek-chain" rel="noreferrer" class="footer-link"><%= gettext("Contribute") %></a></li>
-          <li><a href="http://t.me/kekchain" rel="noreferrer" class="footer-link"><%= gettext("Chat (@kekchain)") %></a></li>
+          <li><a href="https://github.com/go-electronero" rel="noreferrer" class="footer-link"><%= gettext("Contribute") %></a></li>
+          <li><a href="http://t.me/_electronero" rel="noreferrer" class="footer-link"><%= gettext("Chat (@_electronero)") %></a></li>
           <%= if System.get_env("COIN_NAME") && System.get_env("NETWORK_PATH") && System.get_env("SUBNETWORK") && System.get_env("JSON_RPC") && System.get_env("CHAIN_ID") do %>
             <li><a class="footer-link js-btn-add-chain-to-mm btn-add-chain-to-mm in-footer" style="cursor: pointer;"><%= gettext("Add") <> " #{System.get_env("SUBNETWORK")}" %></a></li>
           <% end %>

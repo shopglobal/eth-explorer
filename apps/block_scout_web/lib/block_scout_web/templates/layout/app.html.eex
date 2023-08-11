@@ -48,8 +48,8 @@
         'Less than': '<%= gettext("Less than") %>',
         'Market Cap': '<%= gettext("Market Cap") %>',
         'Price': '<%= gettext("Price") %>',
-        'Ether': '<%= gettext("KEK") %>',
-        'KEK': '<%= gettext("KEK") %>',
+        'Ether': '<%= gettext("X") %>',
+        'X': '<%= gettext("X") %>',
         'Tx/day': '<%= gettext("Tx/day") %>'
       }
     </script>

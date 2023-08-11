@@ -87,7 +87,7 @@
                       to: bridged_tokens_path(@conn, :show, :bsc)
                     ) %>
                 <%= link(
-                      gettext("KEK"),
+                      gettext("X"),
                       class: "dropdown-item #{tab_status("accounts", @conn.request_path)}",
                       to: address_path(@conn, :index)
                     ) %>
@@ -108,7 +108,7 @@
                       to: tokens_path(@conn, :index)
                     ) %>
                 <%= link(
-                      gettext("KEK"),
+                      gettext("X"),
                       class: "dropdown-item #{tab_status("accounts", @conn.request_path)}",
                       to: address_path(@conn, :index)
                     ) %>
@@ -136,7 +136,7 @@
                     to: api_url() <> api_docs_path(@conn, :index)
                   ) %>
               <%= link(
-                    gettext("KEK RPC"),
+                    gettext("X RPC"),
                     class: "dropdown-item #{tab_status("eth-rpc-api-docs", @conn.request_path)}",
                     to: api_url() <> api_docs_path(@conn, :eth_rpc)
                   ) %>

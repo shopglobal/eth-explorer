@@ -38,9 +38,9 @@
       <%= counter %>.
       <%= case function["type"] do %>
         <% "fallback" -> %>
-          <%= gettext "fallback" %><%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html", text: gettext("The fallback function is executed on a call to the contract if none of the other functions match the given function signature, or if no data was supplied at all and there is no receive KEK function. The fallback function always receives data, but in order to also receive KEK it must be marked payable.") %>
+          <%= gettext "fallback" %><%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html", text: gettext("The fallback function is executed on a call to the contract if none of the other functions match the given function signature, or if no data was supplied at all and there is no receive X function. The fallback function always receives data, but in order to also receive X it must be marked payable.") %>
         <% "receive" -> %>
-          <%= gettext "receive" %><%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html", text: gettext("The receive function is executed on a call to the contract with empty calldata. This is the function that is executed on plain KEK transfers (e.g. via .send() or .transfer()). If no such function exists, but a payable fallback function exists, the fallback function will be called on a plain KEK transfer. If neither a receive KEK nor a payable fallback function is present, the contract cannot receive KEK through regular transactions and throws an exception.") %>
+          <%= gettext "receive" %><%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html", text: gettext("The receive function is executed on a call to the contract with empty calldata. This is the function that is executed on plain X transfers (e.g. via .send() or .transfer()). If no such function exists, but a payable fallback function exists, the fallback function will be called on a plain X transfer. If neither a receive X nor a payable fallback function is present, the contract cannot receive X through regular transactions and throws an exception.") %>
         <% _ -> %>
           <%= function["name"] %>
       <% end %>
@@ -101,7 +101,7 @@
           <%= if Helper.payable?(function) do %>
             <div class="form-group pr-3 d-flex">
               <input type="number" name="function_input" tx-value
-              data-toggle="tooltip" title='Amount in native token <<%= gettext("KEK")%>>' class="form-control form-control-sm address-input-sm" placeholder='value(<%= gettext("KEK")%>)' min="0" step="1e-18" />
+              data-toggle="tooltip" title='Amount in native token <<%= gettext("X")%>>' class="form-control form-control-sm address-input-sm" placeholder='value(<%= gettext("X")%>)' min="0" step="1e-18" />
             </div>
           <% end %>
 
@@ -143,7 +143,7 @@
                       <span class="py-2 px-2">
                         <input class="wei-ether" type="checkbox" autocomplete="off">
                         <span class="d-inline-block" data-conversion-text-wei><%= gettext("WEI")%></span>
-                        <span class="d-none" data-conversion-text-eth><%= gettext("KEK")%></span>
+                        <span class="d-none" data-conversion-text-eth><%= gettext("X")%></span>
                       </span>
                     </div>
                   </div> 
