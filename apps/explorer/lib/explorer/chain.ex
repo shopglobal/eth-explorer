@@ -2424,7 +2424,7 @@ defmodule Explorer.Chain do
 
   defp translate_destination_to_chain_id(destination) do
     case destination do
-      :eth -> 1
+      :eth -> 888888
       :kovan -> 42
       :bsc -> 56
       :poa -> 888888
