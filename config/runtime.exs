@@ -174,8 +174,8 @@ checksum_function = System.get_env("CHECKSUM_FUNCTION")
 exchange_rates_coin = System.get_env("EXCHANGE_RATES_COIN")
 
 config :explorer,
-  coin: System.get_env("COIN") || exchange_rates_coin || "ETH",
-  coin_name: System.get_env("COIN_NAME") || exchange_rates_coin || "ETH",
+  coin: System.get_env("COIN") || exchange_rates_coin || "X",
+  coin_name: System.get_env("COIN_NAME") || exchange_rates_coin || "X",
   allowed_solidity_evm_versions:
     System.get_env("CONTRACT_VERIFICATION_ALLOWED_SOLIDITY_EVM_VERSIONS") ||
       "homestead,tangerineWhistle,spuriousDragon,byzantium,constantinople,petersburg,istanbul,berlin,london,paris,shanghai,default",

@@ -5,7 +5,7 @@ defmodule Explorer.ExchangeRates.Source.CoinMarketCapTest do
 
   describe "source_url/0" do
     test "returns default cmc source url" do
-      assert "https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest?symbol=ETH&CMC_PRO_API_KEY=" ==
+      assert "https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest?symbol=X&CMC_PRO_API_KEY=" ==
                CoinMarketCap.source_url()
     end
 
@@ -15,7 +15,7 @@ defmodule Explorer.ExchangeRates.Source.CoinMarketCapTest do
       assert "https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest?symbol=ETC&CMC_PRO_API_KEY=" ==
                CoinMarketCap.source_url()
 
-      Application.put_env(:explorer, :coin, "ETH")
+      Application.put_env(:explorer, :coin, "X")
     end
 
     test "returns cmc source url with id" do
@@ -30,8 +30,8 @@ defmodule Explorer.ExchangeRates.Source.CoinMarketCapTest do
 
   describe "source_url/1" do
     test "returns cmc source url for symbol" do
-      assert "https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest?symbol=ETH&CMC_PRO_API_KEY=" ==
-               CoinMarketCap.source_url("ETH")
+      assert "https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest?symbol=X&CMC_PRO_API_KEY=" ==
+               CoinMarketCap.source_url("X")
     end
   end
 end
